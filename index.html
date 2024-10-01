@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Tectrix</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+
+</head>
+<body id="top"  >
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.gif" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <h3>Navigate to</h3>
+
+            <div class="header-nav__content">
+
+                <ul class="header-nav__list">
+                    <li><a class="smoothscroll"  href="#home" title="Home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="technical and non-technical events">Events</a></li>
+                </ul>
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="grid-overlay">
+            <div></div>
+        </div>
+
+        <div class="home-content">
+            <div class="row home-content__main">
+                <div class="entry-header">
+                    <h1>
+                    Tectrix
+                    </h1>
+                </div>
+                <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">3rd National Level Technical Symposium</h3>
+                <h3>
+                    Proudly Presented By <br> Department Of <strong>INFORMATION SECURITY</strong> 
+                </h3>
+
+                <div class="home-content__video">
+                    <!--  ============timer============= -->
+                    <div class="demo">
+                    <p id="demo"></p>
+
+                    <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("oct 23, 2024 08:00:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "Tectrix ON!!!";
+                    }
+                    }, 1000);
+                    </script>
+                    </div>
+
+                </div>
+                
+                <div class="home-content__button">
+                    <a href="https://forms.gle/MMTLvfV7EYAqF4Hq8" class="btn current">
+                        Register!
+                    </a>
+                    <a href="contact.html" class="btn current">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    Scroll
+                </a>
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://instagram.com/tectrix2k24?igshid=MTg0ZDhmNDA="><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://chat.whatsapp.com/L4GsLPQAllbLUffFSql405"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>Whatsapp</span></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@saveethaschoolofengineerin2774"><i class="fab fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
+            </li>
+            
+        </ul> <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Who We Are</h3>
+                <h1 class="display-1">
+                    Welcome to <b>Tectrix 2K24</b>: The Pinnacle of Innovation and Technology at SSE!
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    Join us as we proudly present Tectrix 2K24, the most anticipated technical symposium of the year at SSE! With a legacy of success, Tectrix has grown into the largest technical event of our college has ever witnessed, attracting over 3,000 participants from various colleges across the nation.
+
+                    <br><br>This year's event promises an unparalleled experience, featuring a lineup of distinguished speakers, hands-on workshops, and innovative projects that showcase the brightest minds in technology. Whether you're a student, a tech enthusiast, or a budding entrepreneur, Tectrix 2K24 is your platform to explore cutting-edge advancements, network with industry leaders, and gain invaluable insights into the future of technology.
+                    
+                    <br><br>Get ready for two days filled with inspiration, learning, and collaboration. Mark your calendars for October 23rd and 24th, 2024, and be part of this extraordinary journey. Together, let’s shape the future at Tectrix 2K24!
+                    
+                    <br><br><b>See you there!!</b>
+                </p>
+                
+                <h2>Technical Events</h2>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row bit-narrow">
+
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Quiz</h4>
+                        <p>
+                            Challenge your technical knowledge and quick thinking in our Quiz event. Show off your expertise in various domains and compete with the best minds.This Event Will Conducted By Offline only.<a href="https://drive.google.com/uc?export=download&id=1bMIU2Y1dFtcYjqL2j8cLNb7-RRftkonO"> Rules and Regulations </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Paper Presentation</h4>
+                        <p>
+                       Present your research, ideas, and innovations to a panel of experts and peers. Share your insights and contribute to the world of technology.This Event Will Conducted Both Online and offline (Only E-Certificate for Online Participants) <a href="https://drive.google.com/uc?export=download&id=1PTfIIT3SNhu6XOPcvY5U6ZEYO8hZyZl8"> Rules and Regulations </a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">UI Designing/Web Designing</h4>
+                        <p>
+                            Unleash your creativity in our UI Designing competition. Craft user interfaces that are not just functional but also visually stunning.This Event Will Conducted only in offline <a href="https://drive.google.com/uc?export=download&id=1yAx35Bzl1ZqqfxM2qnisZ5XfHQJOQhlS"> Rules and Regulations </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Project Expo</h4>
+                        <p>
+                            Showcase your engineering prowess by presenting your projects at the Project Expo. Demonstrate how your innovations can shape the future.This Event Will Conducted only in offline <a href="https://drive.google.com/uc?export=download&id=1u8_jm-ddhndG3Z4jVK7Edhrrzs1zSbHl"> Rules and Regulations </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Coding Ninja</h4>
+                        <p>
+                            Are you a coding wizard? Compete in Coding Ninja and solve complex problems while racing against the clock. It's a battle of wits and coding skills. This Event Will Conducted only in offline<a href="https://drive.google.com/uc?export=download&id=1MdnLIoCSCYnbAFCaZTtk-ec2_JDbFx4N"> Rules and Regulations </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end process -->
+
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services target-section darker">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    <strong>Non-Technical Events</strong>
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row bit-narrow services block-1-2 block-tab-full">
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-star"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Game Of Gold</h3>
+                    <p>
+                        Compete in a strategic board game that combines skill and luck. Will you be the one to claim victory in the Game of Gold? This Event Will Conducted only in offline. <a href="https://drive.google.com/uc?export=download&id=1SVq984-gUhYIgLQ4MSJIMGf-VOBrbUVK"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-smile"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Dance(Solo/Group)</h3>
+                    <p>
+                        Dance to your heart's content in our Dance competition. Whether you're a solo performer or part of a group, show off your moves and entertain the crowd.This Event Will Conducted By Offline only.<a href="https://drive.google.com/uc?export=download&id=1o4S75PUOpwTYSBnae1Qjc3ysdkVZU7E0"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-pie-chart"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Games Garage</h3>
+                    <p>
+                       Step into the Games Garage for a dose of fun and excitement. Play a variety of games and let your competitive spirit run wild. This Event Will Conducted By Both Online And Offline. (Only E-Certificate for Online Participants) <a href="https://drive.google.com/uc?export=download&id=11gBSydTeNi4LcdVHcrB73Ril4H5G2PDV"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-image"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Photography & Short Film</h3>
+                    <p>
+                        Immerse yourself in a world where every photograph tells a story, and every frame of a film transports you to a different reality. Experience a diverse range of artistic styles and genres, from breathtaking landscapes and candid portraits to thought-provoking short films that challenge perceptions and evoke emotions.(Only E-Certificate for Online Participants) <a href="https://drive.google.com/uc?export=download&id=117AubUMFMjc9StDlylz0PN1kO0q9a5Xy"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-heart"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Connexion</h3>
+                    <p>
+                        Creative mindset can make to decorate your thinking capablity.This Event Will Conducted by offline only. <a href="https://drive.google.com/uc?export=download&id=1ff8vZwcD3IrTPH6JMwoVYoMp5xFbpjYd"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon"><i class="icon-lego-block"></i></div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Adzap</h3>
+                    <p>
+                        Put your marketing and advertising skills to the test in Adzap. Create compelling and creative ads that grab attention and leave a lasting impression.This Event will Conducted by offline only.<a href="https://drive.google.com/uc?export=download&id=1SuzEG_jkVL6stprq70mtJuKdwlqVpHgi"> Rules and Regulations </a>
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services -->
+
+    </section> <!-- end s-services -->
+
+    <!-- testimonies
+    ================================================== -->
+    <section class="s-testimonials">
+
+        <div class="testimonials__icon" data-aos="fade-up"></div>
+
+        <div class="row testimonials narrow">
+
+            <div class="col-full testimonials__slider" data-aos="fade-up">
+
+                <div class="testimonials__slide">
+                    <p>
+                       <br> Faculty Organizer: <br>Dr.A.Mohan (9894183073) <br> <br> Student Organizers: <br>Praveen.A (7904918876) <br>A.Sathish Kumar (9080664480) <br>Lithish.M (6383189011) <br>
+                    </p>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>
+                        <br> Event Coordinators
+                        <br> 
+                    </p>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>
+                         
+                    </p>
+                </div> <!-- end testimonials__slide -->
+
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full ss-copyright">
+                <span>© Copyright SIMATS 2024</span><br>
+                <span>Desinged By Team Tectrix</span>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    
+
+
+
+</body>
